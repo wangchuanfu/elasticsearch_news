@@ -8,7 +8,6 @@
 <%@ page import="com.esspnews.utils.WebURLParams" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="ctxcjl"  value="http://localhost:8081"/>
-<c:set var="ctxcj"  value="<%=WebURLParams.LOCAL_URL%>"/>
 
 <%
     String queryBack = (String) request.getAttribute("queryBack");
@@ -32,7 +31,7 @@
         }
 
 
-        window.location.href = "http://localhost:8081/SearchNews?query="+queryBack+"&pageNum="+p;
+        window.location.href = "${ctxcjl}/SearchNews?query="+queryBack+"&pageNum="+p;
 
 
 
