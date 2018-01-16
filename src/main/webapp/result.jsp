@@ -4,13 +4,14 @@
 <%@ page import="com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+
 <%
     String queryBack = (String) request.getAttribute("queryBack");
     ArrayList<Map<String, Object>> newslist = (ArrayList<Map<String, Object>>) request.getAttribute("newslist");
     String totalHits = (String) request.getAttribute("totalHits");
     String totalTime = (String) request.getAttribute("totalTime");
-    int pages = Integer.parseInt(totalHits) / 10 + 1;
-    pages = pages > 10 ? 10 : pages;
+    int pages = Integer.parseInt(totalHits) / 2 + 1;
+    pages = pages > 2 ? 2: pages;
 %>
 <html>
 <head>
@@ -50,6 +51,8 @@
             }
         }
     %>
+
+
 </div>
 <div class="page">
     <ul>

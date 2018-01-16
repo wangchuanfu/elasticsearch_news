@@ -36,11 +36,11 @@ public class SearchServlet extends HttpServlet {
          * 搜索关键字
          */
         req.setCharacterEncoding("UTF-8");
-        String query = req.getParameter("query");
-        byte[]  real_name = query.getBytes("ISO-8859-1");
-        query =new String(real_name, "UTF-8");
+        String keyWords = req.getParameter("query");
+        byte[]  real_name = keyWords.getBytes("ISO-8859-1");
+        keyWords =new String(real_name, "UTF-8");
 
-        System.out.println(query);
+        System.out.println(keyWords);
 
         // 分页信息
         Integer pageSize = 0;// 每页显示条数
@@ -54,26 +54,28 @@ public class SearchServlet extends HttpServlet {
         if (pageNumStr!=null&&Integer.parseInt(pageNumStr)>1){
             pageNum=Integer.parseInt(pageNumStr);
         }
-        searchSpnews(query, pageNum,req);
+        searchSpnews(keyWords, pageNum,req);
 
-        req.setAttribute("queryBack", query);
+        req.setAttribute("queryBack", keyWords);
         req.getRequestDispatcher("result.jsp").forward(req, resp);
 
     }
 
-    private void searchSpnews(String query, int pageNum,HttpServletRequest req) {
+    private void searchSpnews(String keyWords, int pageNum,HttpServletRequest req) {
 
         long start = System.currentTimeMillis();
         TransportClient client = EsUtils.getSingleClient();
         MultiMatchQueryBuilder multiMatchQuery = QueryBuilders
-                .multiMatchQuery(query, "title", "content");
+                .multiMatchQuery(keyWords, "title", "content");
 
         System.out.print(multiMatchQuery);
         HighlightBuilder highlightBuilder = new HighlightBuilder()
                 .preTags("<span style=\"color:red\">")
                 .postTags("</span>")
                 .field("title")
-                .field("content");
+                .field("content")
+                .field("key_word");
+        System.out.print(highlightBuilder.toString());
 
                  SearchResponse searchResponse = client.prepareSearch("spnews")
                 .setTypes("news")
@@ -122,5 +124,39 @@ public class SearchServlet extends HttpServlet {
         doGet(req, resp);
     }
 
+
+    /**
+     * {
+     "query": {
+     "multi_match": {
+     "query": "足球",
+     "fields": [
+     "content^1.0",
+     "title^1.0"
+     ],
+     "type": "best_fields",
+     "operator": "OR",
+     "slop": 0,
+     "prefix_length": 0,
+     "max_expansions": 50,
+     "lenient": false,
+     "zero_terms_query": "NONE",
+     "boost": 1
+     }
+     },
+     "highlight": {
+     "pre_tags": [
+     "<font style='color:red'>"
+     ],
+     "post_tags": [
+     "</font>"
+     ],
+     "fields": {
+     "title": {},
+     "content": {}
+     }
+     }
+     }
+     */
 
 }
