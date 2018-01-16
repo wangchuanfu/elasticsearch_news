@@ -1,6 +1,4 @@
-package com.esspnews.utils;/**
- * Created by wangchuanfu on 18/1/16.
- */
+package com.esspnews.utils;
 
 import java.io.Serializable;
 import java.util.ArrayList;

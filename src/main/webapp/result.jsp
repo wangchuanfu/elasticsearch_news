@@ -5,15 +5,17 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.Iterator" %>
+<%@ page import="com.esspnews.utils.WebURLParams" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<c:set var="ctxcj"  value="localhost:8081"/>
+<c:set var="ctxcjl"  value="http://localhost:8081"/>
+<c:set var="ctxcj"  value="<%=WebURLParams.LOCAL_URL%>"/>
+
 <%
     String queryBack = (String) request.getAttribute("queryBack");
     ArrayList<Map<String, Object>> newslist = (ArrayList<Map<String, Object>>) request.getAttribute("newslist");
     String totalHits = (String) request.getAttribute("totalHits");
     String totalTime = (String) request.getAttribute("totalTime");
     int pages = Integer.parseInt(totalHits) / 10+ 1;
-    pages = pages > 10 ? 10: pages;
 %>
 <c:set var="totalHits" value="<%=totalHits%>"/>
 <c:set var="queryBack" value="<%=queryBack%>"/>
@@ -23,7 +25,6 @@
             function toPage(){
         var queryBack="<%=queryBack%>";
         var p = $("#pageNumText").val();
-         alert(${pagination.totalCount });
         p = Number(p);
 
         if(!/^[0-9]*[1-9][0-9]*$/.test(p)){

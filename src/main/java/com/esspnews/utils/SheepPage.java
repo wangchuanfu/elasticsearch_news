@@ -1,10 +1,7 @@
-package com.esspnews.utils;/**
- * Created by wangchuanfu on 18/1/16.
- */
+package com.esspnews.utils;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import org.apache.logging.log4j.core.util.Integers;
-import org.elasticsearch.action.search.SearchType;
 
 import java.util.ArrayList;
 import java.util.List;
