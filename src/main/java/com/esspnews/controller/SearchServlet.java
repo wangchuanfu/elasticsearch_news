@@ -1,13 +1,14 @@
 package com.esspnews.controller;
 
 import com.esspnews.utils.*;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.text.Text;
 import org.elasticsearch.index.query.MultiMatchQueryBuilder;
-import org.elasticsearch.index.query.Operator;
 import org.elasticsearch.index.query.QueryBuilders;
-import org.elasticsearch.index.search.MultiMatchQuery;
+
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
@@ -30,6 +31,7 @@ import java.util.Map;
 
 @WebServlet(name = "/SearchNews", urlPatterns = "/SearchNews")
 public class SearchServlet extends HttpServlet {
+    protected final static Log logger = LogFactory.getLog(SearchServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -42,8 +44,12 @@ public class SearchServlet extends HttpServlet {
         byte[]  real_name = keyWords.getBytes("ISO-8859-1");
         keyWords =new String(real_name, "UTF-8");
 
-        System.out.println(keyWords);
-// 分页信息
+        /**
+         * 判断是否为拼音
+         */
+        String pinyinKeyword = this.isPinyin(keyWords);
+        logger.info(pinyinKeyword);
+        // 分页信息
         Integer pageSize = 0;// 每页显示条数
         int pageNum =1 ;// 页码
         pageSize = pageSize == 0 ? 10 : pageSize;
@@ -59,6 +65,10 @@ public class SearchServlet extends HttpServlet {
         req.setAttribute("queryBack", keyWords);
         req.getRequestDispatcher("result.jsp").forward(req, resp);
 
+    }
+
+    private String isPinyin(String keyWords) {
+        return null;
     }
 
     private void searchSpnews(String keyWords, int pageNum,HttpServletRequest req) throws UnsupportedEncodingException {

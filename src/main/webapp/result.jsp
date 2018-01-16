@@ -89,14 +89,14 @@
 
 <div class="info">
 
-   <p> 第<input type="text" id="pageNumText" class="get_input">页
+    第<input type="text" id="pageNumText" class="get_input">页
     <input type="button" value="确定" class="btn" style="cursor: pointer;" onclick="toPage();">
-    </p>
-</div>
 
 
-<div class="page-bottom" id="paginationDivId">
-    共${pagination.totalCount }条:
+
+
+
+    共有<span style="color: red;">${pagination.totalCount }条   </span>
     <c:if test="${pagination.totalPage eq 1}">
         <span class="disabled">首页</span>
         <span class="disabled">上一页</span>
@@ -114,7 +114,7 @@
 				<a href="index.jsp" title="首页">首页</a>
 			</span>
         <span>
-				<a href="http://localhost:8081/SearchNews?query=${key}&pageNum=${pagination.page-1}" title="上一页">上一页</a>
+				<a href="${ctxcjl}/SearchNews?query=${key}&pageNum=${pagination.page-1}" title="上一页">上一页</a>
 
 			</span>
     </c:if>
@@ -126,7 +126,7 @@
         </c:if>
         <c:if test="${pagination.page ne i}">
 				<span>
-                    <a href="http://localhost:8081/SearchNews?query=${key}&pageNum=${i}">${i}</a>
+                    <a href="${ctxcjl}/SearchNews?query=${key}&pageNum=${i}">${i}</a>
 
 				</span>
         </c:if>
@@ -134,10 +134,10 @@
 
     <c:if test="${pagination.page != pagination.totalPage}">
 			<span>
-				<a href="http://localhost:8081/SearchNews?query=${key}&pageNum=${pagination.page+1}" title="下一页">下一页</a>
+				<a href="${ctxcjl}/SearchNews?query=${key}&pageNum=${pagination.page+1}" title="下一页">下一页</a>
 
 			</span>
-        <a href="http://localhost:8081//SearchNews?query=${key}&pageNum=${pagination.totalPage}" title="末页">末页</a>
+        <a href="${ctxcjl}/SearchNews?query=${key}&pageNum=${pagination.totalPage}" title="末页">末页</a>
     </c:if>
     <c:if test="${pagination.page eq pagination.totalPage}">
         <span class="disabled">下一页</span>
@@ -153,11 +153,12 @@
         </c:if>
         <c:if test="${pagination.page != 1}">
 			<span>
-                <a href="http://localhost:8081/SearchNews?query=${key}" title="首页">首页</a>
+                <a href="${ctxcjl}/SearchNews?query=${key}" title="首页">首页</a>
 
 			</span>
             <span>
-                    <a href="http://localhost:8081/SearchNews?query=${key}&pageNum=${i}">${i}</a>
+                 <a href="${ctxcjl}/SearchNews?query=${key}&pageNum=${pagination.page-1}" title="上一页">上一页</a>
+
             </span>
         </c:if>
 
@@ -172,7 +173,7 @@
                     </c:if>
                     <c:if test="${pagination.page ne i}">
 						<span>
-                    <a href="http://localhost:8081/SearchNews?query=${key}&pageNum=${i}">${i}</a>
+                    <a href="${ctxcjl}/SearchNews?query=${key}&pageNum=${i}">${i}</a>
 						</span>
                     </c:if>
                 </c:forEach>
@@ -189,7 +190,7 @@
                     </c:if>
                     <c:if test="${pagination.page ne i}">
 						<span>
-                    <a href="http://localhost:8081/SearchNews?query=${key}&pageNum=${i}">${i}</a>
+                    <a href="${ctxcjl}/SearchNews?query=${key}&pageNum=${i}">${i}</a>
 						</span>
                     </c:if>
                 </c:forEach>
@@ -206,7 +207,7 @@
                     </c:if>
                     <c:if test="${pagination.page ne i}">
 						<span>
-                    <a href="http://localhost:8081/SearchNews?query=${key}&pageNum=${i}">${i}</a>
+                    <a href="${ctxcjl}/SearchNews?query=${key}&pageNum=${i}">${i}</a>
 						</span>
                     </c:if>
                 </c:forEach>
@@ -216,11 +217,11 @@
 
         <c:if test="${pagination.page != pagination.totalPage}">
 			<span>
-				<a href="http://localhost:8081/SearchNews?query=${key}&pageNum=${pagination.page+1}" title="下一页">下一页</a>
+				<a href="${ctxcjl}/SearchNews?query=${key}&pageNum=${pagination.page+1}" title="下一页">下一页</a>
 
 			</span>
             <span>
-        <a href="http://localhost:8081//SearchNews?query=${key}&pageNum=${pagination.totalPage}" title="末页">末页</a>
+        <a href="${ctxcjl}/SearchNews?query=${key}&pageNum=${pagination.totalPage}" title="末页">末页</a>
 			</span>
         </c:if>
         <c:if test="${pagination.page eq pagination.totalPage}">
