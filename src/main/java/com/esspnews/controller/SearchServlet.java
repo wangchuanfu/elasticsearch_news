@@ -1,6 +1,6 @@
 package com.esspnews.controller;
 
-import com.esspnews.utils.EsUtils;
+import com.esspnews.utils.*;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.text.Text;
@@ -19,7 +19,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -41,15 +43,13 @@ public class SearchServlet extends HttpServlet {
         keyWords =new String(real_name, "UTF-8");
 
         System.out.println(keyWords);
-
-        // 分页信息
+// 分页信息
         Integer pageSize = 0;// 每页显示条数
-        String proCatalogId = null;// 分类id
-        String orderBy = null;// 排序
-        String pageNums = null;// 页码
+        int pageNum =1 ;// 页码
+        pageSize = pageSize == 0 ? 10 : pageSize;
+
         String pageNumStr=req.getParameter("pageNum");
-        int pageNum =1;
-        pageSize = pageSize == 1 ? 4 : pageSize;
+
 
         if (pageNumStr!=null&&Integer.parseInt(pageNumStr)>1){
             pageNum=Integer.parseInt(pageNumStr);
@@ -61,7 +61,7 @@ public class SearchServlet extends HttpServlet {
 
     }
 
-    private void searchSpnews(String keyWords, int pageNum,HttpServletRequest req) {
+    private void searchSpnews(String keyWords, int pageNum,HttpServletRequest req) throws UnsupportedEncodingException {
 
         long start = System.currentTimeMillis();
         TransportClient client = EsUtils.getSingleClient();
@@ -114,7 +114,34 @@ public class SearchServlet extends HttpServlet {
         }
         long end = System.currentTimeMillis();
         req.setAttribute("newslist", newslist);
+        //总条数,每页默认展示10条数据
+        // 分页信息
+        Integer pageSize = 10;// 每页显示条数
+
+        String pageNumStr=req.getParameter("pageNum");
+        // 1、初始化请求参数
+        SheepPage sheepPage = null;
+        try {
+            sheepPage = initialPage(keyWords
+                    , pageSize+"", pageNumStr);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        PageRequest pageRequest = new PageRequest(sheepPage.getPageNumber()+1,sheepPage.getPageSize()) ;
+
+        Page<Object> pagination = new PageImpl<Object>((List<Object>)sheepPage.getResults(),pageRequest,hits.getTotalHits());
         req.setAttribute("totalHits", hits.getTotalHits() + "");
+
+        req.setCharacterEncoding("UTF-8");
+        String key = req.getParameter("query");
+        byte[]  real_name = key.getBytes("ISO-8859-1");
+        key =new String(real_name, "UTF-8");
+        req.setAttribute("key", key );
+
+        req.setAttribute("pagination", pagination);
+        System.out.print(pagination.getTotalCount()+"==============");
+        System.out.print(pagination.getTotalPage());
         req.setAttribute("totalTime", (end - start) + "");
     }
 
@@ -159,4 +186,10 @@ public class SearchServlet extends HttpServlet {
      }
      */
 
+    private SheepPage initialPage(String originalKeyword
+                                 , String pageSize, String pageNumber)
+            throws Exception {
+        SheepPage pageable = new SheepPage(originalKeyword,  pageSize, pageNumber);
+        return pageable;
+    }
 }
