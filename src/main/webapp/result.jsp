@@ -62,7 +62,7 @@
 <h5 class="result_info">共搜索到<span><%=totalHits%></span>条结果,耗时<span> <%=Double.parseDouble(totalTime) / 1000.0 %></span>秒
 </h5>
 
-
+<!-- 将此方法注释,最好用el表达式进行取值,赋值
 
     <div class="newslist">
     <%
@@ -83,9 +83,33 @@
             }
         }
     %>
-
+-->
 
 </div>
+
+
+
+
+<div class="newslist">
+    <div class="news">
+<c:if test="${!empty newslist }">
+    <c:forEach items="${newslist }" var="news" varStatus="status">
+     <h4>  <a href="${news.url}">${news.title}</a></h4>
+
+      <p>
+        <c:if test="${fn:length(news.content)>200 }">
+            ${fn:substring(news.content, 0, 200)}...
+        </c:if>
+            </p>
+    </c:forEach>
+</c:if>
+</div>
+</div>
+
+
+
+
+
 
 <div class="info">
 
