@@ -5,7 +5,6 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.Iterator" %>
-<%@ page import="com.esspnews.utils.WebURLParams" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="ctxcjl"  value="http://localhost:8081"/>
 
@@ -14,7 +13,6 @@
     ArrayList<Map<String, Object>> newslist = (ArrayList<Map<String, Object>>) request.getAttribute("newslist");
     String totalHits = (String) request.getAttribute("totalHits");
     String totalTime = (String) request.getAttribute("totalTime");
-    int pages = Integer.parseInt(totalHits) / 10+ 1;
 %>
 <c:set var="totalHits" value="<%=totalHits%>"/>
 <c:set var="queryBack" value="<%=queryBack%>"/>
@@ -83,15 +81,14 @@
             }
         }
     %>
--->
+
 
 </div>
 
-
+-->
 
 
 <div class="newslist">
-    <div class="news">
 <c:if test="${!empty newslist }">
     <c:forEach items="${newslist }" var="news" varStatus="status">
      <h4>  <a href="${news.url}">${news.title}</a></h4>
@@ -103,7 +100,6 @@
             </p>
     </c:forEach>
 </c:if>
-</div>
 </div>
 
 
