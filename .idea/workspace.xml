@@ -3,11 +3,195 @@
   <component name="ChangeListManager">
     <list default="true" id="4b6377f5-40c6-4dc2-95bc-ff3a816adb74" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/esspnews/controller/SearchServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/esspnews/dao/Dao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/esspnews/utils/EsUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/esspnews/utils/Integers.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/esspnews/utils/Page.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/esspnews/utils/PageImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/esspnews/utils/PageRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/esspnews/utils/Pageable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/esspnews/utils/SheepPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/esspnews/utils/WebURLParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j2.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/classes/com/esspnews/controller/SearchServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/classes/com/esspnews/dao/Dao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/classes/com/esspnews/utils/EsUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/classes/com/esspnews/utils/Integers.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/classes/com/esspnews/utils/Page.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/classes/com/esspnews/utils/PageImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/classes/com/esspnews/utils/PageRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/classes/com/esspnews/utils/Pageable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/classes/com/esspnews/utils/SheepPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/classes/com/esspnews/utils/WebURLParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/classes/log4j2.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/HdrHistogram-2.1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/commons-codec-1.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/commons-logging-1.1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/compiler-0.9.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/elasticsearch-5.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/fastjson-1.1.43.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/hppc-0.7.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/httpasyncclient-4.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/httpclient-4.5.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/httpcore-4.4.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/httpcore-nio-4.4.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/jackson-core-2.8.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/jackson-dataformat-cbor-2.8.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/jackson-dataformat-smile-2.8.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/jackson-dataformat-yaml-2.8.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/jna-4.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/joda-time-2.9.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/jopt-simple-5.0.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/junit-4.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lang-mustache-client-5.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/log4j-api-2.8.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/log4j-core-2.8.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-analyzers-common-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-backward-codecs-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-core-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-grouping-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-highlighter-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-join-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-memory-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-misc-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-queries-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-queryparser-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-sandbox-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-spatial-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-spatial-extras-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-spatial3d-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/lucene-suggest-6.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/mysql-connector-java-6.0.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/netty-3.10.6.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/netty-buffer-4.1.9.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/netty-codec-4.1.9.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/netty-codec-http-4.1.9.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/netty-common-4.1.9.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/netty-handler-4.1.9.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/netty-resolver-4.1.9.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/netty-transport-4.1.9.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/percolator-client-5.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/reindex-client-5.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/rest-5.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/securesm-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/snakeyaml-1.15.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/t-digest-3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/transport-5.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/transport-netty3-client-5.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/lib/transport-netty4-client-5.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/css/global.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/css/result.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/css/search.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/html/hotworlds.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/img/baidu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/common/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/common/google_analytics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/home_v1/detail.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/home_v1/footer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/home_v1/head.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/home_v1/index_js.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/home_v1/tool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/kf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/lib/jquery/asyncBox.v1.4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/lib/jquery/jquery-1.5.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/lib/jquery/jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/login/login_flow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/myec/shopcartMini.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/js/search/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/admin/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/admin/manager.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/404.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/EmailBidingInformation.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/baidu_analytics.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/bottom.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/business-services.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/cart_div.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/catalog.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/catalogSource.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/catalogSource2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/cnzz_analytics.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/commit_cps.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/common_arrival_notice.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/common_cps.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/common_ctx.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/common_upload.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/div_ad_content.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/error.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/foot.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/footer.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/friend.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/google_analytics.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/head.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/header.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/hot_words.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/hotworlds.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/myec_left.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/navigation.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/notice.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/redirect_info.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/shopCardFooter.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/shopCardHead.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/taglib.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/taglibs.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/tool.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/tool.jsp.bak" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/common/url_header.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/error/error.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/home_v1/footer.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/home_v1/footer_index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/home_v1/header.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/home_v1/header_index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/home_v1/incInc.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/home_v1/link.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/home_v1/taglibs.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/home_v1/tool.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/home_v1/tool_index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/home_v1/tool_yzpd.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/json/jsonResult.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/login/login_flow.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/seo/cps.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/seo/searchUrlList.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/seo/seo.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/seo/seo_goods_list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/utils/transcoding.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/common/footer_promote.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/common/left_promote.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/common/promote_product_list1.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/common/promote_product_list2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/common/recommend_word.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/common/recommend_word_A.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/common/recommend_word_H.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/component/pagination_footer.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/component/pagination_footer_ajax.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/component/pagination_footer_search.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/component/pagination_footer_url.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/component/pagination_header.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/component/pagination_header_ajax.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/filter_condition.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/goods_list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/goods_list_catalog.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/goods_list_detail.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/goods_list_filter_condition.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/goods_list_footer_twoCatalog.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/goods_list_index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/goods_list_left_threeCatalog.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/goods_list_search.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/hot_sale_product.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/product_catalog_suggest.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/promotion_activity.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/search_filter_condition.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/search_goods_list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/search_goods_list_index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/search_promotion_activity.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/jsp/view/goods_list/similar_goods_recommend.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/esspnews/result.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/esspnews/controller/SearchServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/esspnews/controller/SearchServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/search.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/search.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/result.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/result.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,7 +249,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/result.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="113">
-              <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+              <caret line="87" column="1" lean-forward="false" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -84,8 +268,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="39" column="67" lean-forward="true" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+            <state relative-caret-position="86">
+              <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -95,7 +279,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/search.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="353">
-              <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+              <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -105,7 +289,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/common/head.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="205">
-              <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -195,10 +379,35 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="esspnews Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="esspnews Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="248" />
+    <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="737" />
@@ -234,136 +443,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elasticsearch_news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elasticsearch_news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elasticsearch_news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elasticsearch_news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elasticsearch_news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elasticsearch_news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esspnews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elasticsearch_news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elasticsearch_news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esspnews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elasticsearch_news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elasticsearch_news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="esspnews" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -380,6 +459,8 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1119,7 +1200,7 @@
       <workItem from="1515720654574" duration="2018000" />
       <workItem from="1515978893764" duration="12670000" />
       <workItem from="1516064672807" duration="29080000" />
-      <workItem from="1561000696173" duration="7914000" />
+      <workItem from="1561000696173" duration="8197000" />
     </task>
     <servers />
   </component>
@@ -1156,17 +1237,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178560000" />
+    <option name="totallyTimeSpent" value="178843000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="248" y="23" width="1280" height="737" extended-state="0" />
-    <editor active="true" />
+    <frame x="1" y="23" width="1280" height="737" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1181,10 +1262,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39647576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39534885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33279485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33279485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1495,7 +1576,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/result.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
-          <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <caret line="87" column="1" lean-forward="false" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1519,7 +1600,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/common/head.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1537,7 +1618,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/search.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
-          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1577,8 +1658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="39" column="67" lean-forward="true" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+        <state relative-caret-position="86">
+          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding />
         </state>
       </provider>
