@@ -60,11 +60,11 @@
         <h2><a href="index.jsp">新闻搜索</a></h2>
     </div>
     <div class="searchbox">
-        <form action="/SearchNews" method="get">
-            <input type="text" name="query" value="<%=queryBack%>">
+       <!--  <form action="/SearchNews" method="get">  -->
+            <input type="text"  id ="query" name="query" value="<%=queryBack%>">
 
-            <input type="submit" value="百度一下">
-        </form>
+            <input type="submit" value="百度一下" onclick="searchresultnews()">
+       <!--  </form> -->
     </div>
 </div>
 <h5 class="result_info">共搜索到<span><%=totalHits%></span>条结果,耗时<span> <%=Double.parseDouble(totalTime) / 1000.0 %></span>秒
@@ -225,6 +225,22 @@
 
 
 </div>
+
+<script type="text/javascript">
+
+    function searchresultnews(){
+        var keyword= $("#query").val();
+
+        if(keyword=="" ||keyword==null){
+            alert("请输入您要查找的关键词!");
+            return false;
+        }else{
+            window.location.href = "http://localhost:8081/SearchNews?query="+keyword+"&pageNum="+1;
+        }
+
+    }
+
+</script>
 <br/><br/>
 <div class="info text-align: center">
     <p>新闻搜索项目实战 Powered By <b> Elasticsearch</b></p>
