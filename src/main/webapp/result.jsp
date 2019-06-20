@@ -244,7 +244,7 @@
 <br/><br/>
 <div class="info text-align: center">
     <p>新闻搜索项目实战 Powered By <b> Elasticsearch</b></p>
-    <p>@2017 All right reserved</p>
+    <p>@2019 All right reserved</p>
 </div>
 </body>
 </html>
