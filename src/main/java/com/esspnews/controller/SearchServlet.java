@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by bee on 17/8/10.
+ * Created by wangchuanfu on 17/8/10.
  */
 
 @WebServlet(name = "/SearchNews", urlPatterns = "/SearchNews")
@@ -42,7 +42,7 @@ public class SearchServlet extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         String keyWords = req.getParameter("query");
         byte[]  real_name = keyWords.getBytes("ISO-8859-1");
-        keyWords =new String(real_name, "UTF-8");
+       // keyWords =new String(real_name, "UTF-8");
 
         /**
          * 判断是否为拼音
@@ -146,7 +146,7 @@ public class SearchServlet extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         String key = req.getParameter("query");
         byte[]  real_name = key.getBytes("ISO-8859-1");
-        key =new String(real_name, "UTF-8");
+        //key =new String(real_name, "UTF-8");
         req.setAttribute("key", key );
 
         req.setAttribute("pagination", pagination);

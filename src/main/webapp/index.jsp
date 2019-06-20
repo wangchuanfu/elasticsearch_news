@@ -33,4 +33,11 @@
     </div>
 
 </body>
+<div class="searchnav">
+    <a target="_blank" href="https://www.j1.com/news-help-40.html">关于健一</a>|
+    <a target="_blank" href="https://www.j1.com/news-help-41.html">联系我们</a>|
+    <a target="_blank" href="https://www.j1.com/news-help-42.html">诚聘英才</a>|
+    <a target="_blank" href="https://www.j1.com/link.html">友情链接</a>
+</div>
+
 </html>

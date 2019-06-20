@@ -1,3 +1,4 @@
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <script type="text/javascript" src="/js/lib/jquery/jquery-1.5.2.min.js" charset="utf-8"></script>
@@ -6,6 +7,7 @@
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.Iterator" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <c:set var="ctxcjl"  value="http://localhost:8081"/>
 
 <%
@@ -16,6 +18,10 @@
 %>
 <c:set var="totalHits" value="<%=totalHits%>"/>
 <c:set var="queryBack" value="<%=queryBack%>"/>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <script type="text/javascript">
 
@@ -53,69 +59,31 @@
     <div class="searchbox">
         <form action="/SearchNews" method="get">
             <input type="text" name="query" value="<%=queryBack%>">
-            <input type="submit" value="搜索一下">
+            <input type="submit" value="百度一下">
         </form>
     </div>
 </div>
 <h5 class="result_info">共搜索到<span><%=totalHits%></span>条结果,耗时<span> <%=Double.parseDouble(totalTime) / 1000.0 %></span>秒
 </h5>
 
-<!-- 将此方法注释,最好用el表达式进行取值,赋值
-
-    <div class="newslist">
-    <%
-        if (newslist.size() > 0) {
-            Iterator<Map<String, Object>> iter = newslist.iterator();
-            while (iter.hasNext()) {
-                Map<String, Object> news = iter.next();
-                String content = news.get("content").toString();
-                content = content.length() > 200 ? content.substring(0, 200) : content;
-    %>
-    <div class="news">
-        <h4><a href="<%=news.get("url")%>"><%=news.get("title")%>
-        </a></h4>
-        <p><%=content%> ...
-        </p>
-    </div>
-    <%
-            }
-        }
-    %>
-
-
-</div>
-
--->
-
 
 <div class="newslist">
-<c:if test="${!empty newslist }">
-    <c:forEach items="${newslist }" var="news" varStatus="status">
-     <h4>  <a href="${news.url}">${news.title}</a></h4>
+    <c:if test="${!empty newslist }">
+        <c:forEach items="${newslist }" var="news" varStatus="status">
+         <h4>  <a href="${news.url}">${news.title}</a></h4>
 
-      <p>
-        <c:if test="${fn:length(news.content)>200 }">
-            ${fn:substring(news.content, 0, 200)}...
-        </c:if>
-            </p>
-    </c:forEach>
-</c:if>
+          <p>
+            <c:if test="${fn:length(news.content)>200 }">
+                ${fn:substring(news.content, 0, 150)}...
+            </c:if>
+                </p>
+        </c:forEach>
+    </c:if>
 </div>
+<br/><br/>
 
-
-
-
-
-
-<div class="info">
-
-    第<input type="text" id="pageNumText" class="get_input">页
+<div class="info"> 第<input type="text" id="pageNumText" class="get_input">页
     <input type="button" value="确定" class="btn" style="cursor: pointer;" onclick="toPage();">
-
-
-
-
-
     共有<span style="color: red;">${pagination.totalCount }条   </span>
     <c:if test="${pagination.totalPage eq 1}">
         <span class="disabled">首页</span>
@@ -253,7 +221,8 @@
 
 
 </div>
-<div class="info">
+<br/><br/>
+<div class="info text-align: center">
     <p>新闻搜索项目实战 Powered By <b> Elasticsearch</b></p>
     <p>@2017 All right reserved</p>
 </div>
