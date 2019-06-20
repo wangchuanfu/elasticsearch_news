@@ -4,7 +4,7 @@
 	width: 600px;
 	margin-left: auto;
 	margin-right: auto;
-	background: #f52307;
+	background: #ffffff;
 }
 
 .logo {
@@ -24,7 +24,7 @@
 
 .searchbox .input_text {
 	width: 346px;
-	height: 16px;
+	height: 26px;
 	line-height: 16px;
 	padding: 3px 2px;
 	position: absolute;

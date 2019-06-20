@@ -27,13 +27,16 @@
 
             function toPage(){
         var queryBack="<%=queryBack%>";
+        if( queryBack==""){
+            alert("请输入要查询的关键字");
+            return false;
+        }
         var p = $("#pageNumText").val();
         p = Number(p);
 
         if(!/^[0-9]*[1-9][0-9]*$/.test(p)){
             return;
         }
-
 
         window.location.href = "${ctxcjl}/SearchNews?query="+queryBack+"&pageNum="+p;
 
@@ -59,6 +62,7 @@
     <div class="searchbox">
         <form action="/SearchNews" method="get">
             <input type="text" name="query" value="<%=queryBack%>">
+
             <input type="submit" value="百度一下">
         </form>
     </div>

@@ -41,9 +41,9 @@ public class SearchServlet extends HttpServlet {
          */
         req.setCharacterEncoding("UTF-8");
         String keyWords = req.getParameter("query");
+
         byte[]  real_name = keyWords.getBytes("ISO-8859-1");
        // keyWords =new String(real_name, "UTF-8");
-
         /**
          * 判断是否为拼音
          */

@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<c:set var="ctxcjl"  value="http://localhost:8081"/>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 </html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -25,11 +25,11 @@
 
 
     <div class="searchbox">
-        <form action="/SearchNews" method="get">
-            <input id="query" name="query" class="input_text" autocomplete="off" type="text"/>
+
+            <input id="query" name="query" class="input_text" autocomplete="off" type="text" />
             <input value="utf-8" name="enc" type="hidden"/>
-            <input value="百度一下" class="input_submit" type="submit"/>
-        </form>
+            <input value="百度一下" class="input_submit" type="submit" onclick="searchnews()"/>
+
     </div>
 
 </body>
@@ -40,4 +40,20 @@
     <a target="_blank" href="https://www.j1.com/link.html">友情链接</a>
 </div>
 
+
 </html>
+<script type="text/javascript">
+
+    function searchnews(){
+        var keyword= $("#query").val();
+
+        if(keyword=="" ||keyword==null){
+            alert("请输入您要查找的关键词!");
+            return false;
+        }else{
+            window.location.href = "http://localhost:8081/SearchNews?query="+keyword+"&pageNum="+1;
+        }
+
+    }
+
+</script>
